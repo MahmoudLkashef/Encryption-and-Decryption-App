@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        app:cardCornerRadius="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+        <TextView
+            android:id="@+id/tV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Enter Your Text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/inputMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableStart="@drawable/plain_text"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Plain Text"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <EditText
+        android:id="@+id/ciphEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableStart="@drawable/cipher_text"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Cipher Text"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/inputMessage"
+        app:layout_constraintStart_toStartOf="@+id/inputMessage"
+        app:layout_constraintTop_toBottomOf="@+id/inputMessage" />
+
+    <EditText
+        android:id="@+id/key_dt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableStart="@drawable/secret_key"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Secret Key"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/ciphEdt"
+        app:layout_constraintStart_toStartOf="@+id/ciphEdt"
+        app:layout_constraintTop_toBottomOf="@+id/ciphEdt" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnencrypt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_style"
+        android:text="Encrypt"
+        app:layout_constraintEnd_toStartOf="@+id/btndecrypt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/key_dt"
+        app:layout_constraintTop_toBottomOf="@+id/key_dt" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btndecrypt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_style"
+        android:text="Decrypt"
+        app:layout_constraintEnd_toEndOf="@+id/key_dt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnencrypt"
+        app:layout_constraintTop_toBottomOf="@+id/key_dt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

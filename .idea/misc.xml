@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Mohammed/Coding/Caesar Cipher/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/mody/Desktop/Caesar Cipher/app/src/main/res/drawable/btn_style.xml" value="0.17" />
+        <entry key="..\:/Users/mody/Desktop/Caesar Cipher/app/src/main/res/drawable/cipher_text.xml" value="0.17" />
+        <entry key="..\:/Users/mody/Desktop/Caesar Cipher/app/src/main/res/drawable/spinner_background.xml" value="0.17" />
+        <entry key="..\:/Users/mody/Desktop/Caesar Cipher/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16_PREVIEW" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

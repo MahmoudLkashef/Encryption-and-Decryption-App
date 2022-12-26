@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Encryption And Decryption</string>
+    <string-array name="algorithms">
+        <item>Choose the algorithm</item>
+        <item>Caesar Cipher</item>
+        <item>Rail Fence</item>
+        <item>Vernam Cipher</item>
+        <item>Row Tranposition</item>
+    </string-array>
+</resources>
